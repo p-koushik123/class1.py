@@ -1,0 +1,46 @@
+Microsoft Windows [Version 10.0.19044.1826]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\koushik>python --version
+Python 3.10.5
+
+C:\Users\koushik>PYTHON
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> a=10
+>>> type(a)
+<class 'int'>
+>>> b=1.2345
+>>> type(b)
+<class 'float'>
+>>> c=a+b
+>>> print(c)
+11.2345
+>>> type(c)
+<class 'float'>
+>>> d="koushik"
+>>> type(d)
+<class 'str'>
+>>> e=c+d
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+>>>
+>>> e="kishore"
+>>> f=e+d
+>>> print(f)
+kishorekoushik
+>>> h=input("Enter ur DOB")
+Enter ur DOB11 07
+>>> print(h)
+11 07
+>>> type(h)
+<class 'str'>
+>>> h=int(input("Enter ur phone nume"))
+Enter ur phone nume8106230214
+>>> print(h)
+8106230214
+>>> type(h)
+<class 'int'>
+>>>

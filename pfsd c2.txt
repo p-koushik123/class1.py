@@ -1,0 +1,86 @@
+Microsoft Windows [Version 10.0.19044.1826]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\koushik>python
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> a="true"
+>>> type(a)
+<class 'str'>
+>>> a=bool("true")
+>>> type(a)
+<class 'bool'>
+>>> a="True"
+>>> type(a)
+<class 'str'>
+>>> a=True
+>>> type(a)
+<class 'bool'>
+>>> #my name is
+>>> b=[12,34,566,45,32,35]
+>>> type(b)
+<class 'list'>
+>>> c=["koushik","venugopal rao",8120394648]
+>>> type(c)
+<class 'list'>
+>>> d=b+c
+>>> print(d)
+[12, 34, 566, 45, 32, 35, 'koushik', 'venugopal rao', 8120394648]
+>>> e=(12,44,34,"koushik","ravi")
+>>> type(e)
+<class 'tuple'>
+>>> f=(39.2,5.2)
+>>> g=e+f
+>>> print(g)
+(12, 44, 34, 'koushik', 'ravi', 39.2, 5.2)
+>>> type(g)
+<class 'tuple'>
+>>> h={"Andhra Pradesh":"Amaravathi","Bihar":"Patna"}
+>>> i={10:29.3,23:34.5}
+>>> type(i)
+<class 'dict'>
+>>> type(h)
+<class 'dict'>
+>>> h["bihar"]="chennai"
+>>> print(h)
+{'Andhra Pradesh': 'Amaravathi', 'Bihar': 'Patna', 'bihar': 'chennai'}
+>>> h["Bihar"]="chennai"
+>>> print(h)
+{'Andhra Pradesh': 'Amaravathi', 'Bihar': 'chennai', 'bihar': 'chennai'}
+>>> h["Amaravathi"]="arunanchal"
+>>> print(h)
+{'Andhra Pradesh': 'Amaravathi', 'Bihar': 'chennai', 'bihar': 'chennai', 'Amaravathi': 'arunanchal'}
+>>> print(h.pop("Andhra Pradesh"))
+Amaravathi
+>>> print(h)
+{'Bihar': 'chennai', 'bihar': 'chennai', 'Amaravathi': 'arunanchal'}
+>>> print(h.popitem())
+('Amaravathi', 'arunanchal')
+>>> print(h)
+{'Bihar': 'chennai', 'bihar': 'chennai'}
+>>> j={"january","february","march","april"}
+>>> type(j)
+<class 'set'>
+>>> k={123,234,45,67,89}
+>>> type(k)
+<class 'set'>
+>>> l=k+j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'set' and 'set'
+>>> l={"january","februry","january"}
+>>> print(l)
+{'january', 'februry'}
+>>> m=k|l
+>>> print(m)
+{'january', 67, 'februry', 89, 234, 123, 45}
+>>> m=k&l
+>>> print(m)
+set()
+>>>
+>>>
+>>>
